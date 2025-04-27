@@ -7,9 +7,9 @@ GPIO.setup(channel,GPIO.IN)
 
 def callback(channel):
        if GPIO.input(channel):
-           print ("water Detected")
+           print ("No need to water")
    	else:
-		PRINT("WATER Detected")
+		PRINT("Need to water")
 
 
 GPIO.add_event_detect(channel, GPIO.BOTH, bouncetime=300)
